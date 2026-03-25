@@ -9,14 +9,14 @@
 /* --- Configuration --- */
 #define TEMP_SENSOR_ENDPOINT_NUMBER 10
 #define BAT_ADC_PIN 0
-#define VOLTAGE_DIVIDER_RATIO 2.0  // Corrected for 1M/1M resistors
-#define TIME_TO_SLEEP 60           // Check every 60s
-#define MAX_REPORTS_TO_SKIP 60     // Force report every 60 mins (Heartbeat)
-#define TEMP_THRESHOLD 0.5         // Only report if change > 0.5°C
-#define HUM_THRESHOLD 2.0          // Only report if change > 2.0%
+#define VOLTAGE_DIVIDER_RATIO 2.0         // Corrected for 1M/1M resistors
+#define TIME_TO_SLEEP 60                  // Check every 60s
+#define MAX_REPORTS_TO_SKIP 60            // Force report every 60 mins (Heartbeat)
+#define TEMP_THRESHOLD 0.5                // Only report if change > 0.5°C
+#define HUM_THRESHOLD 2.0                 // Only report if change > 2.0%
 #define uS_TO_S_FACTOR 1000000ULL
-#define MANUFACTURER "DFRobot"     // Manufacturer name
-#define MODEL "Beetle-C6-Task"     // Model name
+#define MANUFACTURER "YOUR MANUFACTURER"  // Manufacturer name
+#define MODEL "YOUR MODEL"                // Model name
 
 /* --- Persistent Memory (Survives Deep Sleep) --- */
 RTC_DATA_ATTR float lastReportedTemp = -99.0;
